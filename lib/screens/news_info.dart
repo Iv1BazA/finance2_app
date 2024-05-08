@@ -23,15 +23,18 @@ class _NewsInfoWidgetState extends State<NewsInfoWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 30),
-            Row(
-              children: [
-                IconButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                    icon: Icon(Icons.chevron_left, color: Colors.black)),
-                Text('Back'),
-              ],
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+              child: Container(
+                child: Row(
+                  children: [
+                    Icon(Icons.chevron_left, color: Colors.black),
+                    Text('Back'),
+                  ],
+                ),
+              ),
             ),
             SizedBox(
               height: 35,

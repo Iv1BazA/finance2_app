@@ -33,19 +33,19 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
             builder: (context, expensesProvider, incomeProvider, child) {
               return (expensesProvider.expensesList.isEmpty &&
                       incomeProvider.incomeList.isEmpty)
-                  ? NoInfoWidget()
-                  : OperationsWidget();
+                  ? const NoInfoWidget()
+                  : const OperationsWidget();
             },
           ),
           Consumer<QuizGameProvider>(
             builder: (context, quizProvider, child) {
               return (quizProvider.quizResults.isEmpty)
-                  ? QuizStartWidget()
-                  : QuizEndWidget();
+                  ? const QuizStartWidget()
+                  : const QuizEndWidget();
             },
           ),
-          NewsWidget(),
-          SettingsWidget()
+          const NewsWidget(),
+          const SettingsWidget()
         ],
       )),
       bottomNavigationBar: BottomNavigationBar(

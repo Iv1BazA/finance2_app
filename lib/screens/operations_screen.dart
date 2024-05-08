@@ -90,7 +90,7 @@ class _ExpensesWidgetState extends State<ExpensesWidget> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 15),
+            SizedBox(height: 30),
             GestureDetector(
               onTap: () {
                 Navigator.of(context).pop();

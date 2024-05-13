@@ -72,10 +72,14 @@ class NewsWidget extends StatelessWidget {
                               style:
                                   TextStyle(fontSize: 14, color: Colors.black),
                             ),
-                            Image.asset(
-                              'assets/Images/example.png',
-                              height: 146,
-                              fit: BoxFit.cover,
+                            SizedBox(height: 10),
+                            Center(
+                              child: Image.network(
+                                '${listNews[index].image}',
+                                width: 250,
+                                height: 146,
+                                fit: BoxFit.cover,
+                              ),
                             )
                           ],
                         ),

@@ -41,8 +41,8 @@ class _NewsInfoWidgetState extends State<NewsInfoWidget> {
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
-              child: Image.asset(
-                widget.news.icon,
+              child: Image.network(
+                widget.news.image,
                 height: 153,
                 width: double.infinity,
                 fit: BoxFit.cover,
